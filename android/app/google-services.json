@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "427552696926",
+    "project_id": "matkulpemob",
+    "storage_bucket": "matkulpemob.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427552696926:android:d26205b8b23a088d39e2cf",
+        "android_client_info": {
+          "package_name": "com.example.pertemuan5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMda7-FcKacBWOqIRPymTy_NoSETYkx3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

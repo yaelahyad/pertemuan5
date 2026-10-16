@@ -120,20 +120,20 @@ class _StokBarangPageState extends State<StokBarangPage> {
           key: _formKey,
           child: Column(
             children: [
-              // 1. Nama Barang (Inisial Nama Depan: 'D')
+              // 1. Nama Barang (Inisial Nama Depan: 'T')
               TextFormField(
                 controller: _namaController,
                 decoration: const InputDecoration(
-                  labelText: 'Nama Barang (Awali Inisial "D")',
+                  labelText: 'Nama Barang (Awali Inisial "T")',
                   border: OutlineInputBorder(),
-                  hintText: 'Contoh: D-Laptop Asus',
+                  hintText: 'Contoh: T-Laptop Dell',
                 ),
                 validator: (value) {
                   if (value == null || value.trim().isEmpty) {
                     return 'Nama Barang wajib diisi';
                   }
-                  if (!value.trim().toUpperCase().startsWith('D')) {
-                    return 'Nama Barang harus diawali inisial nama depan "D"';
+                  if (!value.trim().toUpperCase().startsWith('T')) {
+                    return 'Nama Barang harus diawali inisial nama depan "T"';
                   }
                   return null;
                 },
@@ -172,14 +172,14 @@ class _StokBarangPageState extends State<StokBarangPage> {
               ),
               const SizedBox(height: 12),
 
-              // 4. Kode Barang (Min 6 angka & Akhiran NIM 22)
+              // 4. Kode Barang (Min 6 angka & Akhiran NIM 139)
               TextFormField(
                 controller: _kodeController,
                 keyboardType: TextInputType.number,
                 decoration: const InputDecoration(
-                  labelText: 'Kode Barang (Min 6 digit, akhiran 22)',
+                  labelText: 'Kode Barang (Min 6 digit, akhiran 139)',
                   border: OutlineInputBorder(),
-                  hintText: 'Contoh: 100022',
+                  hintText: 'Contoh: 100139',
                 ),
                 validator: (value) {
                   if (value == null || value.trim().isEmpty) {
@@ -192,8 +192,8 @@ class _StokBarangPageState extends State<StokBarangPage> {
                   if (input.length < 6) {
                     return 'Kode Barang minimal harus 6 angka';
                   }
-                  if (!input.endsWith('22')) {
-                    return 'Kode Barang harus diakhiri 2 angka NIM (22)';
+                  if (!input.endsWith('139')) {
+                    return 'Kode Barang harus diakhiri 3 angka NIM (139)';
                   }
                   return null;
                 },
